@@ -63,3 +63,28 @@ print(len(ss))
 
 for j in ss:
   print(j)
+
+
+##########
+
+# 최종 코드 (128ms)
+
+import sys
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+
+s = set()
+s2 = set()
+
+for i in range(n+m):
+  name = input().rstrip()
+  if name in s:
+    s2.add(name)
+  else:
+    s.add(name)
+
+ss = sorted(list(s2))
+print(len(ss))
+
+print(*ss, sep=' ')
