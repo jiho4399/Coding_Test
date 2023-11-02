@@ -1,4 +1,4 @@
-#n!의 5 개수 세는 함수
+# n!의 5 개수 세는 함수
 def five_count(i):
     answer = 0
     while i != 0:
@@ -6,7 +6,7 @@ def five_count(i):
         answer += i
     return answer
 
-#n!의 2 개수 세는 함수
+# n!의 2 개수 세는 함수
 def two_count(i):
     answer = 0
     while i != 0:
