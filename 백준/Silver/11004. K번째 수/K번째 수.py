@@ -1,6 +1,8 @@
-n, m = map(int, input().split())
+import sys
 
-lst = list(map(int, input().split()))
+n, m = map(int, sys.stdin.readline().split())
+
+lst = list(map(int, sys.stdin.readline().split()))
 lst.sort()
 
 print(lst[m-1])
