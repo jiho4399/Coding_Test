@@ -1,4 +1,7 @@
-import math # math 라이브러리 사용
 n = int(input())
+answer = 1
 
-print(math.factorial(n))
+for i in range(1, n+1):
+    answer *= i
+    
+print(answer)
